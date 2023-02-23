@@ -18,7 +18,6 @@ body{
     margin: 0;
     font-family: 'Lato', sans-serif;
     overflow: hidden;
-
 }
 
 .bg-image{
@@ -30,8 +29,6 @@ body{
     left: 603px; */
     left: calc(50% - 655px/2 + 290.5px);
     top: calc(50% - 482.35px/2 + 50.17px);
-    
-
 }
 
 .container{
@@ -59,8 +56,6 @@ body{
 .logo img{
     width: 164px;
     height: 29.36px;
-    
-
 }
 
 .a-elements{
@@ -109,8 +104,7 @@ body{
     100%{
         transform: translateY(0%);
         opacity: 1;
-    }
-    
+    } 
 }
 
 .products, 
@@ -186,7 +180,6 @@ body{
         transform: translateX(0%);
         opacity: 1;
     }
-    
 }
 
 .secondary-text{
@@ -206,8 +199,7 @@ body{
     100%{
         transform: translateX(0%);
         opacity: 1;
-    }
-    
+    }   
 }
 
 .signUp-button{
@@ -239,15 +231,13 @@ body{
 @media screen and (max-width:1280px) {
     .bg-image{
         transform: translateX(-20%);
-    }
-    
+    } 
 }
 
 @media screen and (max-width:1103px) {
     .bg-image{
         display: none;
-    }
-    
+    } 
 }
 
 @media screen and (max-width:860px) {
@@ -256,25 +246,22 @@ body{
         justify-content: center;
         align-items: end; */
         gap: 1rem;
-    }
-    
+    }   
 }
 
 @media screen and (max-width:670px) {
-
     .navbar{
         height: 25%;
     }
 
     .a-image{
         align-self: flex-start;
-        margin-top: 10px;
     }
 
     .a-elements{
         flex-direction: column-reverse;
-        /* justify-content: flex-start; */
         align-items: end;
+        align-self: flex-start;
     }
 
     .text-button{
@@ -288,7 +275,6 @@ body{
     .principal-text{
         width: 25rem;
     }
-    
 }
 
 @media screen and (max-width:415px){
@@ -299,8 +285,4 @@ body{
     .secondary-text{
         width: 15rem;
     }
-    
 }
-
-
-  
