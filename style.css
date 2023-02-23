@@ -291,5 +291,16 @@ body{
     
 }
 
+@media screen and (max-width:415px){
+    .principal-text{
+        width: 15rem;
+    }
+
+    .secondary-text{
+        width: 15rem;
+    }
+    
+}
+
 
   
