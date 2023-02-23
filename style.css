@@ -17,27 +17,32 @@ body{
     height: 100vh;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    overflow: hidden;
 
 }
 
 .bg-image{
     position: absolute;
-width: 615.15px;
-height: 453px;
-left: calc(50% - 615.15px/2 + 186.57px);
-left: calc(50% - 615.15px/2 + 218.57px);
+    width: 615.15px;
+    height: 453px;
+
+    /* top: 120px;
+    left: 603px; */
+    left: calc(50% - 655px/2 + 290.5px);
+    top: calc(50% - 482.35px/2 + 50.17px);
+    
 
 }
 
 .container{
     width: 90%;
-    height: 98%;
+    height: 95%;
     /* background-color: red; */
 }
 
 .navbar{
     width: 100%;
-    height: 3rem;
+    height: 10%;
     /* background-color: green; */
     display: flex;
     justify-content: center;
@@ -71,7 +76,7 @@ left: calc(50% - 615.15px/2 + 218.57px);
 .signIn{
     background-color: var(--primary-color);
     color: var(--neutral-color);
-    width: 5.5rem;
+    min-width: 5.5rem;
     height: 1.5rem;
     display: grid;
     place-items: center;
@@ -112,6 +117,7 @@ left: calc(50% - 615.15px/2 + 218.57px);
 .AboutUs, 
 .contactUs{
     height: 20px;
+    min-width: 90px;
     transition: transform .5s;
     cursor: pointer;
     overflow: hidden;
@@ -138,10 +144,13 @@ left: calc(50% - 615.15px/2 + 218.57px);
 
 .text-button{
     /* background-color: pink; */
-    width: 40rem;
-    margin-left: 60px;
+    /* width: 40rem; */
+    width: 100%;
+    height: 90%;
+    /* margin-left: 60px; */
     z-index: 100;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     
 }
@@ -153,12 +162,18 @@ left: calc(50% - 615.15px/2 + 218.57px);
       
 } */
 
+.principal-text, .secondary-text, .signUp-button{
+    margin-left: 60px;
+}
+
 .principal-text{
     /* background-color: white; */
     width: 33rem;
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: clamp(1.875rem, 1.4923rem + 2.0408vw, 3.125rem);
     font-weight: 400;
-    color: var(--primary-color);z-index: 100;
+    color: var(--primary-color);
+    z-index: 100;
     animation: principal-text-animation 1.5s;
     margin-bottom: 0;
 }
@@ -203,7 +218,7 @@ left: calc(50% - 615.15px/2 + 218.57px);
     display: grid;
     place-items: center;
     border-radius: 3px;
-    transition: .3s;
+    transition: transform .3s, background-color .3s, color .3s, border .3s;
     border: 2px solid var(--primary-color);
     font-size: 18px;
     animation: app 1s;
@@ -221,9 +236,60 @@ left: calc(50% - 615.15px/2 + 218.57px);
     transform: scale(1.01);
 }
 
-/* @media screen and (min-width:8) {
+@media screen and (max-width:1280px) {
+    .bg-image{
+        transform: translateX(-20%);
+    }
     
-} */
+}
+
+@media screen and (max-width:1103px) {
+    .bg-image{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:860px) {
+    .a-elements{
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: end; */
+        gap: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:670px) {
+
+    .navbar{
+        height: 25%;
+    }
+
+    .a-image{
+        align-self: flex-start;
+        margin-top: 10px;
+    }
+
+    .a-elements{
+        flex-direction: column-reverse;
+        /* justify-content: flex-start; */
+        align-items: end;
+    }
+
+    .text-button{
+        height: 75%;
+    }
+
+    .principal-text, .secondary-text, .signUp-button{
+        margin-left: 0px;
+    }
+
+    .principal-text{
+        width: 25rem;
+    }
+    
+}
 
 
   
