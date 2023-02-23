@@ -144,12 +144,11 @@ body{
     
 }
 
-/* .principal-text::selection, .secondary-text::selection{
+.principal-text::selection, .secondary-text::selection{
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
-    text-decoration-style: wavy;
       
-} */
+}
 
 .principal-text, .secondary-text, .signUp-button{
     margin-left: 60px;
