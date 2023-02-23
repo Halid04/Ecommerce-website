@@ -24,9 +24,6 @@ body{
     position: absolute;
     width: 615.15px;
     height: 453px;
-
-    /* top: 120px;
-    left: 603px; */
     left: calc(50% - 655px/2 + 290.5px);
     top: calc(50% - 482.35px/2 + 50.17px);
 }
@@ -138,10 +135,8 @@ body{
 
 .text-button{
     /* background-color: pink; */
-    /* width: 40rem; */
     width: 100%;
     height: 90%;
-    /* margin-left: 60px; */
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -278,11 +273,16 @@ body{
 }
 
 @media screen and (max-width:415px){
+    .text-button{
+        align-items: flex-start;
+        gap: 4px;
+    }
     .principal-text{
         width: 15rem;
     }
 
     .secondary-text{
         width: 15rem;
+        margin: 0;
     }
 }
