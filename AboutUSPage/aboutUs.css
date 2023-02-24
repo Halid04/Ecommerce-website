@@ -129,11 +129,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .ourStory-image{
     width: 445px;
-    height: 219.6px;
+    height: fit-content;
 }
 
 .ourStory-text{
@@ -141,8 +142,8 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--card-color);
-    width: 45rem;
-    height: 14rem;
+    width: 70%;
+    height: 16rem;
     border-radius: 17px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -150,9 +151,12 @@ body{
 .ourStory-text div{
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.5rem, 0.241rem + 1.3812vw, 1.125rem);
     /* background-color: beige; */
-    width: 43rem;
+    width: 95%;
+    height: 85%;
 }
 
 .ourStory-text b{
@@ -185,6 +189,14 @@ body{
         flex-direction: column-reverse;
         align-items: end;
         align-self: flex-start;
+    }
+
+    .ourStory-image{
+        display: none;
+    }
+
+    .ourStory-text div{
+        font-size: clamp(0.625rem, 0.3716rem + 1.3514vw, 0.9375rem);
     }
 }
 
