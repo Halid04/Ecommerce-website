@@ -21,14 +21,6 @@ body{
     overflow-x: hidden;
 }
 
-.bg-image{
-    position: absolute;
-    width: 615.15px;
-    height: 453px;
-    left: calc(50% - 655px/2 + 290.5px);
-    top: calc(50% - 482.35px/2 + 50.17px);
-}
-
 .container{
     width: 90%;
     height: 100%;
@@ -130,7 +122,10 @@ body{
     display:none;
 }
 
-.ourStory, .ourMission{
+.ourStory, 
+.ourMission, 
+.ourTeam,
+.ourPhilosophy{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,12 +134,18 @@ body{
     /* height: 1/6; */
 }
 
-.ourStory-image, .ourMission-image{
+.ourStory-image, 
+.ourMission-image, 
+.ourTeam-image,
+.ourPhilosophy-image{
     width: 445px;
     height: fit-content;
 }
 
-.ourStory-text, .ourMission-text{
+.ourStory-text, 
+.ourMission-text, 
+.ourTeam-text,
+.ourPhilosophy-text{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +156,10 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.ourStory-text div, .ourMission-text div{
+.ourStory-text div, 
+.ourMission-text div, 
+.ourTeam-text div,
+.ourPhilosophy-text div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +170,10 @@ body{
     height: 85%;
 }
 
-.ourStory-text b, .ourMission-text b{
+.ourStory-text b, 
+.ourMission-text b, 
+.ourTeam-text b,
+.ourPhilosophy-text b{
     align-self: flex-start;
 }
 
@@ -200,11 +207,11 @@ body{
         align-self: flex-start;
     }
 
-    .ourStory-image, .ourMission-image{
+    .ourStory-image, .ourMission-image, .ourTeam-image, .ourPhilosophy-image{
         display: none;
     }
 
-    .ourStory-text div, .ourMission-text div{
+    .ourStory-text div, .ourMission-text div, .ourTeam-text div, .ourPhilosophy-text div{
         font-size: clamp(0.625rem, 0.3716rem + 1.3514vw, 0.9375rem);
     }
 }
