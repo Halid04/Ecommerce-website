@@ -120,6 +120,8 @@ body{
     margin-top: 7rem;
 }
 
+
+
 .ourStory, 
 .ourMission, 
 .ourTeam,
@@ -133,14 +135,21 @@ body{
     /* background-color: black; */
 }
 
+.svg-container{
+    /* background-color: blue; */
+    width: 50%;
+}
+
+
 .ourStory-image, 
 .ourMission-image, 
 .ourTeam-image,
 .ourPhilosophy-image,
 .ourProducts-image,
 .ourSustainabilityEfforts-image{
-    width: 445px;
+    width: 100%;
     height: fit-content;
+    /* background-color: #292524; */
 }
 
 .ourStory-text, 
@@ -184,13 +193,6 @@ body{
     align-self: flex-start;
 }
 
-
-
-
-
-
-
-
 @media screen and (max-width:860px) {
     .a-elements{
         gap: 1rem;
@@ -214,6 +216,11 @@ body{
 
     .images-text{
         margin-top: 11rem;
+        justify-content: center;
+    }
+
+    .svg-container{
+        display: none;
     }
 
     .ourStory-image, 
