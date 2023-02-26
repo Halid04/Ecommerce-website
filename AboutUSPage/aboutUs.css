@@ -29,7 +29,7 @@ body{
 
 .navbar{
     position: fixed;
-    width: 91.2%;
+    width: 90%;
     height: 10%;
     background-color: var(--neutral-color);
     display: flex;
