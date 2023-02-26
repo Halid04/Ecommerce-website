@@ -28,15 +28,17 @@ body{
 }
 
 .navbar{
-    /* position: relative; */
-    width: 100%;
+    position: fixed;
+    width: 91.2%;
     height: 10%;
-    /* background-color: green; */
+    background-color: var(--neutral-color);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
     font-weight: bold;
+    z-index: 1;
+    
     
 }
 
@@ -114,30 +116,29 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
-    gap: 3rem;
-    scrollbar-width: 0;
-}
-.images-text::-webkit-scrollbar{
-    display:none;
+    gap: 4rem;
+    margin-top: 7rem;
 }
 
 .ourStory, 
 .ourMission, 
 .ourTeam,
-.ourPhilosophy{
+.ourPhilosophy,
+.ourProducts,
+.ourSustainabilityEfforts{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     /* background-color: black; */
-    /* height: 1/6; */
 }
 
 .ourStory-image, 
 .ourMission-image, 
 .ourTeam-image,
-.ourPhilosophy-image{
+.ourPhilosophy-image,
+.ourProducts-image,
+.ourSustainabilityEfforts-image{
     width: 445px;
     height: fit-content;
 }
@@ -145,7 +146,9 @@ body{
 .ourStory-text, 
 .ourMission-text, 
 .ourTeam-text,
-.ourPhilosophy-text{
+.ourPhilosophy-text,
+.ourProducts-text,
+.ourSustainabilityEfforts-text{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +162,9 @@ body{
 .ourStory-text div, 
 .ourMission-text div, 
 .ourTeam-text div,
-.ourPhilosophy-text div{
+.ourPhilosophy-text div,
+.ourProducts-text div,
+.ourSustainabilityEfforts-text div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,11 +178,11 @@ body{
 .ourStory-text b, 
 .ourMission-text b, 
 .ourTeam-text b,
-.ourPhilosophy-text b{
+.ourPhilosophy-text b,
+.ourProducts-text b,
+.ourSustainabilityEfforts-text b{
     align-self: flex-start;
 }
-
-
 
 
 
@@ -207,11 +212,25 @@ body{
         align-self: flex-start;
     }
 
-    .ourStory-image, .ourMission-image, .ourTeam-image, .ourPhilosophy-image{
+    .images-text{
+        margin-top: 11rem;
+    }
+
+    .ourStory-image, 
+    .ourMission-image, 
+    .ourTeam-image, 
+    .ourPhilosophy-image,
+    .ourProducts-image,
+    .ourSustainabilityEfforts-image{
         display: none;
     }
 
-    .ourStory-text div, .ourMission-text div, .ourTeam-text div, .ourPhilosophy-text div{
+    .ourStory-text div, 
+    .ourMission-text div, 
+    .ourTeam-text div, 
+    .ourPhilosophy-text div,
+    .ourProducts-text div,
+    .ourSustainabilityEfforts-text div{
         font-size: clamp(0.625rem, 0.3716rem + 1.3514vw, 0.9375rem);
     }
 }
