@@ -1,0 +1,27 @@
+:root{
+    --primary-color: #292524;
+    --secondary-color: #78716C;
+    --neutral-color: #FFFBF5;
+}
+
+.border-bottom-animation{
+    position: relative;
+}
+
+.border-bottom-animation::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--primary-color);
+    animation: borderAnimation 1s forwards;
+}
+@keyframes borderAnimation {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
