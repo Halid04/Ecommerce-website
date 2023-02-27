@@ -1,0 +1,190 @@
+:root{
+    --primary-color: #292524;
+    --secondary-color: #78716C;
+    --neutral-color: #FFFBF5;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+body{
+    background-color: var(--neutral-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.bg-image{
+    position: absolute;
+    width: 615.15px;
+    height: 453px;
+    left: calc(50% - 655px/2 + 290.5px);
+    top: calc(50% - 482.35px/2 + 50.17px);
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.navbar{
+    width: 100%;
+    height: 10%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.a-image{
+    /* background-color: cadetblue; */
+    width: 50%;
+}
+
+.logo img{
+    width: 164px;
+    height: 29.36px;
+}
+
+.a-elements{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* background-color: black; */
+    width: 50%;
+    gap: 3rem;
+    text-align: center;
+}
+
+.signIn{
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    min-width: 5.5rem;
+    height: 1.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    transition: .5s;
+    border: 2px solid var(--primary-color);
+
+}
+.signIn:hover{
+    background-color: var(--neutral-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+
+.products, 
+.AboutUs, 
+.contactUs{
+    height: 20px;
+    min-width: 90px;
+    transition: transform .5s;
+    cursor: pointer;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+  
+.products-one, 
+.products-two, 
+.aboutUs-one, 
+.aboutUs-two, 
+.contactUs-one, 
+.contactUs-two{
+    transition: transform .5s;
+}
+  
+.products:hover .products-one, 
+.products:hover .products-two , 
+.AboutUs:hover .aboutUs-one, 
+.AboutUs:hover .aboutUs-two , 
+.contactUs:hover .contactUs-one, 
+.contactUs:hover .contactUs-two{
+    transform: translatey(-100%);
+}
+
+@media screen and (max-width:1280px) {
+    .bg-image{
+        transform: translateX(-20%);
+    } 
+}
+
+@media screen and (max-width:1103px) {
+    .bg-image{
+        display: none;
+    } 
+}
+
+@media screen and (max-width:860px) {
+    .a-elements{
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: end; */
+        gap: 1rem;
+    }   
+}
+
+@media screen and (max-width:670px) {
+    .navbar{
+        height: 25%;
+    }
+
+    .a-image{
+        align-self: flex-start;
+    }
+
+    .a-elements{
+        flex-direction: column-reverse;
+        align-items: end;
+        align-self: flex-start;
+    }
+
+    /* .text-button{
+        height: 75%;
+    }
+
+    .principal-text, .secondary-text, .signUp-button{
+        margin-left: 0px;
+    }
+
+    .principal-text{
+        width: 25rem;
+    } */
+}
+
+/* @media screen and (max-width:415px){
+    .text-button{
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .principal-text{
+        width: 15rem;
+    }
+
+    .secondary-text{
+        width: 15rem;
+        margin: 0;
+    }
+} */
+
+@media screen and (max-width:285px){
+    .products, 
+    .AboutUs, 
+    .contactUs{
+        min-width: 50px;
+    }
+
+    .signIn{
+        min-width: 4rem;
+    }
+}
