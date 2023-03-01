@@ -276,10 +276,6 @@ body{
         display: none;
     }
 
-    .text-button{
-        height: 75%;
-    }
-
     .principal-text, .secondary-text, .signUp-button{
         margin-left: 0px;
     }
@@ -292,7 +288,7 @@ body{
 @media screen and (max-width:415px){
     .text-button{
         align-items: flex-start;
-        gap: 4px;
+        gap: 15px;
     }
     .principal-text{
         width: 15rem;
