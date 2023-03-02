@@ -10,7 +10,7 @@ a{
     cursor: pointer;
 }
 
-html,body{
+body{
     background-color: var(--neutral-color);
     display: flex;
     justify-content: center;
