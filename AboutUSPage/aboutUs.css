@@ -34,13 +34,10 @@ body{
     background-color: var(--neutral-color);
     /* background-color: green; */
     display: flex;
-    justify-content: center;
     align-items: center;
     color: var(--primary-color);
     font-weight: bold;
     z-index: 1;
-    
-    
 }
 
 .a-image{
@@ -59,7 +56,7 @@ body{
     align-items: center;
     /* background-color: black; */
     width: 50%;
-    gap: 3rem;
+    gap: 40px;
     text-align: center;
 }
 
@@ -182,26 +179,26 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: clamp(0.5rem, 0.241rem + 1.3812vw, 1.125rem);
+    font-size: 1.4vw;
     /* background-color: beige; */
     width: 95%;
     height: 85%;
 }
 
-.ourStory-text b, 
-.ourMission-text b, 
-.ourTeam-text b,
-.ourPhilosophy-text b,
-.ourProducts-text b,
-.ourSustainabilityEfforts-text b{
-    align-self: flex-start;
-}
 
 @media screen and (max-width:860px) {
     .a-elements{
-        gap: 1rem;
+        gap: 20px;
     }   
+
+    .ourStory-text div, 
+    .ourMission-text div, 
+    .ourTeam-text div,
+    .ourPhilosophy-text div,
+    .ourProducts-text div,
+    .ourSustainabilityEfforts-text div{
+        font-size: 1.7vw;
+    }
 }
 
 @media screen and (max-width:670px) {
@@ -238,11 +235,6 @@ body{
         display: none;
     }
 
-    .images-text{
-        margin-top: 11rem;
-        /* justify-content: center; */
-    }
-
     .svg-container{
         display: none;
     }
@@ -262,7 +254,18 @@ body{
     .ourPhilosophy-text div,
     .ourProducts-text div,
     .ourSustainabilityEfforts-text div{
-        font-size: clamp(0.625rem, 0.3716rem + 1.3514vw, 0.9375rem);
+        font-size: 2.4vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ourStory-text div, 
+    .ourMission-text div, 
+    .ourTeam-text div, 
+    .ourPhilosophy-text div,
+    .ourProducts-text div,
+    .ourSustainabilityEfforts-text div{
+        font-size: 2.7vw;
     }
 }
 
