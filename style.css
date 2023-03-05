@@ -157,7 +157,7 @@ body{
 
 .principal-text{
     width: 33rem;
-    font-size: clamp(1.875rem, 1.4923rem + 2.0408vw, 3.125rem);
+    font-size: 3.6vw;
     font-weight: 400;
     color: var(--primary-color);
     z-index: 100;
@@ -234,6 +234,10 @@ body{
     .a-elements{
         gap: 20px;
     }   
+
+    .principal-text{
+        font-size: 5vw;
+    }
 }
 
 @media screen and (max-width:670px) {
@@ -276,6 +280,7 @@ body{
 
     .principal-text{
         width: 25rem;
+        font-size: 7vw;
     }
 }
 
@@ -286,6 +291,7 @@ body{
     }
     .principal-text{
         width: 15rem;
+        
     }
 
     .secondary-text{
