@@ -289,17 +289,16 @@ body{
 
     .principal-text{
         width: 25rem;
-        font-size: 7vw;
+        font-size: 8vw;
     }
 
     .secondary-text{
-        font-size: 3.5vw;
+        font-size: 3.7vw;
     }
 }
 
 @media screen and (max-width:415px){
     .text-button{
-        align-items: flex-start;
         gap: 15px;
     }
     .principal-text{
@@ -310,6 +309,6 @@ body{
     .secondary-text{
         width: 15rem;
         margin: 0;
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
 }
