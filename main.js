@@ -3,7 +3,6 @@ const mobileMenu = document.querySelector(".mobileMenu");
 const closeMenuBar = document.querySelector(".close img")
 
 openMenuBar.addEventListener("click", ()=>{
-    console.log("ok");
     mobileMenu.style.transform = "translateX(0%)"
 })
 
